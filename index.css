@@ -1,0 +1,95 @@
+/* Estilização do Body da página*/
+* {
+  margin: 0;
+  border: 0;
+  font-family: "Tahoma", "Arial";
+}
+
+body {
+    background-color: #FFF0DD;
+}
+
+/* Estilização do header da página*/
+header {
+    background-color: #2A4F3D;
+    height: 202px;
+}
+
+/* Estilização da Logo*/
+.logo {
+    height: 202px;
+    margin-left: 70px;
+}
+
+/* Estilização da nav-bar*/
+nav {
+    font-size: 28px;
+    top: 60px;
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    right: 10px;
+}
+
+nav li {
+    display: inline;
+  }
+
+  a {
+    text-decoration: none;
+    color: #D4AF37;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40pt;
+    top: 20px;
+    margin-right: 20px;
+  }
+
+  /* Estilização do Banner*/
+  .banner {
+    height: 284px;
+    background-image: url(images/banner-image.jpg);
+    background-size: cover;
+    background-position: center 25%;
+  }
+
+  /* Seção Sobre Nós*/
+
+  .about_us {
+    margin: 0;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .image_about_us {
+    width: 473px;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 25px;
+  }
+
+  .title_about_us {
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+
+    font-family: 'Cormorant Garamond', serif;  
+    color: #2A4F3D;    
+    font-size: 35pt;
+  }
+
+  .subtitle_about_us {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20pt;
+    font-family:'Playfair Display', serif;  
+    color: #D4AF37;
+  }
+
+  .p_about_us {
+    font-family: 'Lora', serif;
+    color: #8B6B4D;
+    font-size: 18pt;
+    margin-top: 40px;
+    line-height: 30px;
+  }
+
