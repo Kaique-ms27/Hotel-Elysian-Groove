@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Elysian Grove – Beatus Ille</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="servicos.css" />
     <link rel="shortcut icon" type="imagex/png" href="images/logo-image.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,29 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="servicos.css">
+
+    <script>
+
+        // Mostra alerta ao carregar
+        alert('Conheça nossos Serviços Exclusivos!');
+
+        // Cria objeto com data atual
+        data = new Date;
+
+        // Vetor com nomes dos dias da semana
+        dia = new Array('Domingo', 'Segundo-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado');
+
+        // Vetor com nomes dos meses
+        mes = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
+
+
+        // Função para abrir janela com detalhes do produto
+        function abrirDetalhes(nome, imagem, descricao) {
+            const url = `pop_produto.html?nomeProd=${encodeURIComponent(nome)}&imagemProd=${encodeURIComponent(imagem)}&descricaoProd=${encodeURIComponent(descricao)}`
+            window.open(url, "_blank", "width=600,height=500")
+        }
+    </script>
+
 </head>
 
 <body>
@@ -30,10 +53,138 @@
             </nav>
         </div>
     </header>
+    <main>
+        <section class="nossos_servicos">
+            <p class="title_default">Conheça nossos serviços</p>
+            <p class="date">
+                <script>
 
+                    document.write(dia[data.getDay()] + ', ' + data.getDate() + ' de ' + mes[data.getMonth()] + ' de ' + data.getFullYear());
 
-
-
+                </script>
+            </p>
+        </section>
+        <div class="container">
+            <script>
+                descricaoSpa =  "Massagens com óleos orgânicos em cabines de vidro com vista para a floresta.";
+                sliderSpa = ['images/Spa1.jpg', 'images/Spa2.jpg'];
+            </script>
+            <div class="card" onclick="abrirDetalhes('Concierge Personalizado', sliderSpa, descricaoSpa)">
+                <img src="#" alt="">
+                <h2>Spa na Natureza</h2>
+                <p class="descricao">Massagens com óleos orgânicos em cabines de vidro com vista para a floresta.</p>
+                <span class="preco">R$ 450 (90min) | R$ 700 (pacote casal, 120min).</span>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                descricaoTrilha = "Caminhada exclusiva + cesta com queijos, frutas e espumante.";
+                sliderTrilha = ['images/cafe1.jpg', 'images/cafe2.jpg'];
+            </script>
+            <div class="card" onclick="abrirDetalhes('Trilhas Guiadas com Piquenique Gourmet', sliderTrilha, descricaoTrilha)">
+                <img src="#" alt="">
+                <h2>Trilhas Guiadas com Piquenique Gourmet</h2>
+                <p class="descricao">Caminhada exclusiva + cesta com queijos, frutas e espumante.</p>
+                <span class="preco">R$ 300 por pessoa (3h de experiência).</span>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                descricaoJantar = "Menu degustação 5 pratos + vinhos selecionados em deck privativo.";
+                sliderJantar = ['images/yoga1.jpg', 'images/yoga2.jpg']
+            </script>
+            <div class="card" onclick="abrirDetalhes('Jantar Sob as Estrelas', sliderJantar, descricaoJantar)">
+                <img src="" alt="">
+                <h2>Jantar Sob as Estrelas</h2>
+                <p class="descricao">Menu degustação 5 pratos + vinhos selecionados em deck privativo.</p>
+                <span class="preco">R$ 600 por pessoa (com harmonização).</span>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                descricaoPiscina = "Diária com mordomo 24h, café da manhã servido na varanda.";
+                sliderPiscina = ['images/piscina1.jpg', 'images/piscina2.jpg'];
+            </script>
+            <div class="card" onclick="abrirDetalhes('Suite com Piscina Privativa', sliderPiscina, descricaoPiscina)">
+                <img src="" alt="">
+                <h2>Suite com Piscina Privativa</h2>
+                <p class="descricao">Diária com mordomo 24h, café da manhã servido na varanda.</p>
+                <span class="preco">R$ 2.800 (noite) – promocional para lua de mel: R$ 2.300.</span>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                descricaoYoga = "Aulas matinais com instrutores certificados.";
+                sliderYoga = ['images/yoga1.jpg', 'images/yoga2.jpg'];
+            </script>
+            <div class="card" onclick="abrirDetalhes('Yoga ao Amanhecer no Lago', sliderYoga, descricaoYoga)">
+                <img src="" alt="">
+                <h2>Yoga ao Amanhecer no Lago</h2>
+                <p class="descricao">Aulas matinais com instrutores certificados.</p>
+                <span class="preco">R$ 120 (aula avulsa) | R$ 500 (pacote 5 aulas).</span>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                descricaoVinho = "Seleção de 4 vinhos raros + acompanhamentos.";
+                sliderVinho = ['images.vinho1.jpg', 'images/vinho2.jpg'];
+            </script>
+            <div class="card" onclick="abrirDetalhes('Degustação de Vinhos e Queijos Artesanais', sliderVinho, descricaoVinho)">
+                <img src="" alt="">
+                <h2>Degustação de Vinhos e Queijos Artesanais</h2>
+                <p class="descricao">Seleção de 4 vinhos raros + acompanhamentos.</p>
+                <span class="preco">R$ 250 por pessoa.</span>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                descricaoCine = "Sessão privativa com pipoca trufada e cobertores de cashmere.";
+                sliderCine = ['images/cine1.jpg', 'images/cine2.jpg'];
+            </script>
+            <div class="card" onclick="abrirDetalhes('Noite de Cinema sob as Árvores', sliderCine, descricaoCine)">
+                <img src="" alt="">
+                <h2>Noite de Cinema sob as Árvores</h2>
+                <p class="descricao">Sessão privativa com pipoca trufada e cobertores de cashmere.</p>
+                <span class="preco">R$ 1.200 (até 6 pessoas).</span>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                descricaoBarco = "Caiaque ou barco a remos + taça de Veuve Clicquot.";
+                sliderBarco = ['images/barco.jpg', 'images/barco.jpg'];
+            </script>
+            <div class="card" onclick="abrirDetalhes('Passeio de Barco com Champanhe', sliderBarco, descricaoBarco)">
+                <img src="" alt="">
+                <h2>Passeio de Barco com Champanhe</h2>
+                <p class="descricao">Caiaque ou barco a remos + taça de Veuve Clicquot.</p>
+                <span class="preco">R$ 400 (1h30, casal).</span>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                descricaoWork = "Oficina de cultivo de ervas e culinária zero waste.";
+                sliderWork = ['images/work1.jpg', 'images/work2.jpg'];
+            </script>
+            <div class="card" onclick="abrirDetalhes('Workshop de Sustentabilidade', sliderWork, descricaoWork)">
+                <img src="" alt="">
+                <h2>Workshop de Sustentabilidade</h2>
+                <p class="descricao">Oficina de cultivo de ervas e culinária zero waste.</p>
+                <span class="preco">R$ 180 por pessoa (inclui kit de plantas).</span>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                descricaoChurras = "Carnes nobres (Wagyu, cordeiro) assadas em fogo de chão.";
+                sliderChurras = ['images/churras1.jpg', 'images/churras2.jpg'];
+            </script>
+            <div class="card" onclick="abrirDetalhes('Churrasco na Floresta', sliderChurras, descricaoChurras)">
+                <img src="" alt="">
+                <h2>Churrasco na Floresta</h2>
+                <p class="descricao">Carnes nobres (Wagyu, cordeiro) assadas em fogo de chão.</p>
+                <span class="preco">R$ 350 por pessoa (open bar de drinks artesanais).</span>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="contact_footer">
             <p class="title_footer">Venha nos Conhecer</p>
