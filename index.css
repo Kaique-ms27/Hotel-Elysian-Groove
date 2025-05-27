@@ -2,94 +2,199 @@
 * {
   margin: 0;
   border: 0;
-  font-family: "Tahoma", "Arial";
 }
 
 body {
-    background-color: #FFF0DD;
+  background-color: #FFF0DD;
 }
 
 /* Estilização do header da página*/
 header {
-    background-color: #2A4F3D;
-    height: 202px;
+  background-color: #2A4F3D;
+  height: 202px;
 }
 
 /* Estilização da Logo*/
 .logo {
-    height: 202px;
-    margin-left: 70px;
+  height: 202px;
+  margin-left: 70px;
 }
 
 /* Estilização da nav-bar*/
 nav {
-    font-size: 28px;
-    top: 60px;
-    position: absolute;
-    font-family: 'Cormorant Garamond', serif;
-    right: 10px;
+  font-size: 28px;
+  top: 60px;
+  position: absolute;
+  font-family: 'Cormorant Garamond', serif;
+  right: 10px;
 }
 
 nav li {
-    display: inline;
-  }
+  display: inline;
+}
 
-  a {
-    text-decoration: none;
-    color: #D4AF37;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 40pt;
-    top: 20px;
-    margin-right: 20px;
-  }
+nav a {
+  text-decoration: none;
+  color: #D4AF37;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40pt;
+  top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
 
-  /* Estilização do Banner*/
-  .banner {
-    height: 284px;
-    background-image: url(images/banner-image.jpg);
-    background-size: cover;
-    background-position: center 25%;
-  }
+nav a:hover {
+  background-color: #2e5743;
+  border-radius: 25px;
+}
 
-  /* Seção Sobre Nós*/
+/* Estilização do Banner*/
+.banner {
+  height: 284px;
+  background-image: url(images/banner-image.jpg);
+  background-size: cover;
+  background-position: center 25%;
+}
 
-  .about_us {
-    margin: 0;
-    text-align: justify;
-    width: 60%;
-    margin-left: 20%;
-  }
+/* Seção Sobre Nós*/
 
-  .image_about_us {
-    width: 473px;
-    padding: 10px;
-    float: left;
-    margin-right: 10px;
-    border-radius: 25px;
-  }
+.about_us {
+  margin: 0;
+  text-align: justify;
+  width: 60%;
+  margin-left: 20%;
+}
 
-  .title_about_us {
-    text-align: center;
-    padding: 10px 10px 0px 10px;
+.image_about_us {
+  width: 473px;
+  padding: 10px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 25px;
+}
 
-    font-family: 'Cormorant Garamond', serif;  
-    color: #2A4F3D;    
-    font-size: 35pt;
-  }
+.title_default {
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+  color: #2A4F3D;
+  font-size: 35pt;
+}
 
-  .subtitle_about_us {
-    text-align: center;
-    padding-bottom: 10px;
-    font-size: 20pt;
-    font-family:'Playfair Display', serif;  
-    color: #D4AF37;
-  }
+.subtitle_default {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 20pt;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  color: #D4AF37;
+}
 
-  .p_about_us {
-    font-family: 'Lora', serif;
-    color: #8B6B4D;
-    font-size: 18pt;
-    margin-top: 40px;
-    line-height: 30px;
-  }
+.p_about_us {
+  font-family: 'Lora', serif;
+  color: #8B6B4D;
+  font-size: 18pt;
+  margin-top: 40px;
+  line-height: 30px;
+}
 
+/* Seção nosso estabelecimento*/
+
+.map_location {
+  width: 1056px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 25px;
+}
+
+.map {
+
+  margin: 0 auto;
+  display: block;
+  border-radius: 25px;
+}
+
+/* Seção nossos serviços */
+
+.image_our_services {
+  width: 535px;
+  height: 301px;
+  border-radius: 25px;
+}
+
+.our_services {
+  margin: 0;
+  text-align: justify;
+  width: 100%;
+}
+
+.div_our_services {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%
+}
+
+.ul_our_services {
+  font-family: 'Lora', serif;
+  color: #8B6B4D;
+  font-size: 20pt;
+  margin-top: 80px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  letter-spacing: 5px;
+
+}
+
+.ul_our_services li:before {
+  content: "★ ";
+  color: #2A4F3D;
+  width: 1px;
+}
+
+.video {
+  width: 1056px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+/* Footer */
+
+footer {
+  background-color: #2A4F3D;
+  color: #FFFFFF;
+  height: 202px;
+  font-family: 'Lora', serif;
+}
+
+.title_footer {
+  font-size: 30pt;
+}
+.contact_footer {
+  text-align: center;
+  margin: 0 auto; 
+  display: block; 
+  padding-top: 55px;
+}
+
+.contatos {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  gap: 80px;
+  font-size: 15pt;
+  font-style: italic;
+}
+
+footer li {
+  display: inline;
+}
+
+footer a {
+  color: #FFFFFF;
+}
