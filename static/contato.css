@@ -1,0 +1,179 @@
+/* Estilização do Body da página*/
+* {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: #fff0dd;
+}
+
+/* Estilização do header da página*/
+header {
+  background-color: #2a4f3d;
+  height: 202px;
+}
+
+/* Estilização da Logo*/
+.logo {
+  height: 202px;
+  margin-left: 70px;
+}
+
+/* Estilização da nav-bar*/
+nav {
+  font-size: 28px;
+  top: 60px;
+  position: absolute;
+  font-family: "Cormorant Garamond", serif;
+  right: 10px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d4af37;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40pt;
+  top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #2e5743;
+  border-radius: 25px;
+}
+
+.title_default {
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  color: #2a4f3d;
+  font-size: 35pt;
+}
+
+.subtitle_default {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 20pt;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  color: #d4af37;
+}
+
+.sub_texto {
+  font-family: "Lora", serif;
+  color: #8b6b4d;
+  font-size: 15pt;
+  margin-top: 40px;
+  line-height: 30px;
+}
+
+.texto {
+  font-family: "Lora", serif;
+  color: #2a4f3d;
+  font-size: 18pt;
+  margin-top: 40px;
+  line-height: 30px;  
+}
+
+/*Formulário*/
+form {
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-bottom: 0;
+}
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+fieldset {
+  width: 75%;
+  padding-left: 5%;
+  margin-bottom: 2%;
+}
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 85%;
+}
+.chk {
+  margin: 20px 0;
+}
+.enviar {
+  margin-left: 24%;
+  width: 27%;
+  padding: 15px 0;
+  margin-bottom: 25px;
+  background: #8b6b4d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+.enviar:hover {
+  background: #9a5833;
+  transform: scale(1.06);
+}
+
+/*Div do retorno do formulário*/
+.divRetorno {
+  display: none;
+  margin-bottom: 15px;
+}
+.divRetorno p {
+  font-size: 24px;
+}
+
+.inputs {
+  border-radius: 5.5px;
+  border: none;
+  padding: 10px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #2a4f3d;
+  color: #ffffff;
+  height: 202px;
+  font-family: "Lora", serif;
+}
+
+.title_footer {
+  font-size: 30pt;
+}
+.contact_footer {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  padding-top: 55px;
+}
+
+.contatos {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  gap: 80px;
+  font-size: 15pt;
+  font-style: italic;
+}
+
+footer li {
+  display: inline;
+}
+
+footer a {
+  color: #ffffff;
+}

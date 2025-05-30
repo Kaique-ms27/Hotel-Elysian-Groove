@@ -1,0 +1,143 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Elysian Grove – Beatus Ille</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./static/contato.css" />
+  <link rel="shortcut icon" type="imagex/png" href="images/logo-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+</head>
+
+  <body>
+  <header>
+    <div class="divHeader">
+      <a href="index.html"><img src="images/logo-image.png" alt="Hotel Elysian Grove – Beatus Ille" title="Hotel Elysian Grove"
+        class="logo" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <main>
+      <p class="title_default">Contatos</p>
+
+      <p class="subtitle_default">
+        Entre em contato com a gente! <br>
+        Crie seu cadastro aqui!
+      </p>
+
+      <form id="frmContato">
+        <fieldset>
+          <legend class="texto">Dados Pessoais</legend>
+          <label class="sub_texto">* Nome e sobrenome</label>
+          <input
+            class="inputs"
+            type="text"
+            id="nomesobrenome"
+            name=""
+            class="input-padrao"
+            required
+            placeholder="Digite seu nome completo"
+          />
+
+          <br /><br />
+
+          <label class="sub_texto">E-mail</label>
+          <input
+            class="inputs"
+            type="email"
+            id="email"
+            name=""
+            class="input-padrao"
+            placeholder="Digite seu E-mail"
+          />
+
+          <br /><br />
+
+          <label class="sub_texto">Telefone</label>
+          <input
+            class="inputs"
+            type="tel"
+            id="telefone"
+            name=""
+            class="input-padrao"
+            placeholder="(XX) XXXXX-XXXX"
+          />
+
+          <br /><br />
+
+          <label class="sub_texto">* Mensagem</label>
+          <textarea
+            cols="70"
+            rows="10"
+            id="mensagem"
+            class="input-padrao inputs"
+            required
+          ></textarea>
+
+          <br />
+
+          <label class="sub_texto"
+            >Como prefere o nosso contato?
+            <input type="radio" value="radio-mail" name="Contato" /> E-mail
+            <input type="radio" value="radio-telefone" name="Contato" />
+            Telefone
+            <input type="radio" value="radio-whatsapp" name="Contato" />
+            Whatsapp
+          </label>
+
+          <br />
+          <label class="sub_texto"
+            >Qual o motivo do seu contato?
+            <select>
+              <option>Selecione</option>
+              <option>Dúvida</option>
+              <option>Sugestão</option>
+              <option>Elogio</option>
+              <option>Reclamação</option>
+            </select>
+          </label>
+          <br />
+        </fieldset>
+
+        <label class="texto"
+          ><input type="checkbox" class="chk" /> Gostaria de receber nossas
+          novidades por e-mail?</label
+        >
+
+        <input
+          type="submit"
+          id="enviar"
+          value="Enviar formulário"
+          class="enviar"
+        />
+      </form>
+    </main>
+    <footer>
+      <div class="contact_footer">
+        <p class="title_footer">Venha nos Conhecer</p>
+        <ul class="contatos">
+          <li>
+            <a href="https://wa.me/5511937760281"
+              ><i class="fa fa-whatsapp"></i> Whatsapp(11) 93776-0281</a
+            >
+          </li>
+          <li>
+            <a href="https://instagram.com/kaique.ms27"
+              ><i class="fa fa-instagram"></i> Instagram @kaique.ms27</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

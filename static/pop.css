@@ -1,0 +1,69 @@
+
+
+
+.pop {
+    background-color: #FFF0DD ;
+    margin: 0;
+    text-align: center;
+}
+
+/* Imagem da POP */
+.pop img {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-left: 55px !important;
+}
+
+.pop p {
+    color: #2A4F3D;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    padding-bottom: 15px;
+    white-space: pre-line;
+    width: 90%;
+    margin: 0;
+}
+
+.pop h1{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    color: #2A4F3D;
+}
+
+
+/* CSS DO SLIDER */
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-direction: column !important;
+}
+
+.sliderDetalhes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8%;
+    padding: 0;
+}
+
+.slider button {
+    background-color: #2A4F3D;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    height: 50px !important;
+    margin-top: 100px !important;
+    margin-left: 10px;
+    margin-right: -45px;
+}

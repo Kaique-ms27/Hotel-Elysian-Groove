@@ -51,7 +51,7 @@ nav a:hover {
 /* Estilização do Banner*/
 .banner {
   height: 284px;
-  background-image: url(images/banner-image.jpg);
+  background-image: url(../images/banner-image.jpg);
   background-size: cover;
   background-position: center 25%;
 }
