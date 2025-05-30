@@ -76,19 +76,33 @@ nav a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.card :hover {
+.container :hover {
     transform: scale(1.05);
+}
+
+.card img {
+    height: 500px;
+    border-radius: 25px;
 }
 
 h2 {
     color: #D4AF37;
     font-family: 'Lora', serif;
     font-style: italic;
+    padding: 15px;
 }
 .descricao {
     color: #FFF0DD;
     font-family: 'Lora', serif;
     font-style: italic;
+    padding-bottom: 15px;
+}
+
+.preco {
+        color: #FFF0DD;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    padding-bottom: 15px;
 }
 
 
