@@ -58,6 +58,15 @@ nav a:hover {
     font-size: 35pt;
   }
 
+.date {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20pt;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    color: #D4AF37;
+}
+
 .container {
     display: flex;
     justify-content: center;
