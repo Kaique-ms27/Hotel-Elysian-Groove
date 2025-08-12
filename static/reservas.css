@@ -58,6 +58,24 @@
     font-size: 35pt;
   }
 
+  /*Tabela de encomendas*/
+  table{
+    width: 100%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+  }
+
+  td, th {
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #d4af37;
+    text-align: center;
+  }
+
+  th {
+    font-weight: bold;
+    background-color: #2a4f3d;
+  }
 
 
 
