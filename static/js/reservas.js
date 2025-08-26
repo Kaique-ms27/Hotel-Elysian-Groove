@@ -1,5 +1,56 @@
-document.querySelector(".reserva-total-1").textContent = document.querySelector(".reserva-qtd-1").textContent * document.querySelector(".reserva-unitario-1").textContent
-document.querySelector(".reserva-total-2").textContent = document.querySelector(".reserva-qtd-2").textContent * document.querySelector(".reserva-unitario-2").textContent
-document.querySelector(".reserva-total-3").textContent = document.querySelector(".reserva-qtd-3").textContent * document.querySelector(".reserva-unitario-3").textContent
-document.querySelector(".reserva-total-4").textContent = document.querySelector(".reserva-qtd-4").textContent * document.querySelector(".reserva-unitario-4").textContent
-document.querySelector(".reserva-total-5").textContent = document.querySelector(".reserva-qtd-5").textContent * document.querySelector(".reserva-unitario-5").textContent
+let clientes = document.querySelectorAll(".cliente");
+
+// Estrutura de repetição para passar por todas as encomendas e calcular o total
+for (let count = 0; count < clientes.length; count++) {
+
+    // Qtd de encomendas
+    let qtd = clientes[count].querySelector(".qtd").textContent;
+
+    // Valor de cada encomenda
+    var unitario = clientes[count].querySelector(".unitario").textContent;
+
+    // Verifica se a qtd é valida
+    if (qtd < 1 || isNaN(qtd)) {
+
+        //A qtd é menor que 1 ou NaN
+        clientes[count].querySelector(".qtd").textContent = "Quantidade Inválida!";
+
+        // Deixa o texto qtd em vermelho
+        // clientes[count].querySelector(".qtd").style.color = "red";
+
+        // Linha toda com texto em vermelho
+        //clientes[count].style.color = "red";
+
+        // Linha toda vermelha e texto em branco
+        clientes[count].style.backgroundColor = "red";
+
+        clientes[count].style.color = "white";
+
+    } else {
+
+        // Verifica se o unitario é valido
+        if (unitario < 1 || isNaN(unitario)) {
+
+            // Unitario é menor que o mínimo ou NaN
+            clientes[count].querySelector(".unitario").textContent = "Valor incorreto";
+
+            // Linha toda vermelha e texto em branco
+            clientes[count].style.backgroundColor = "red";
+
+            clientes[count].style.color = "white";
+
+        } else {
+
+            // Exibe o total
+            clientes[count].querySelector(".total").textContent = calcula_total(qtd, unitario);
+
+            // Envia a formatação  para o valor uni
+            clientes[count].querySelector(".unitario").textContent =formata_valor(parseFloat(unitario));
+
+
+        }
+
+    }
+
+
+}

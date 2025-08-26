@@ -15,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    
   </head>
 
   <body>
@@ -45,61 +44,68 @@
           <thead>
             <tr>
               <th>Nome</th>
-              <th>Produto</th>
+              <th>Serviços</th>
               <th>Quantidade</th>
               <th>Valor Unitário</th>
               <th>Total</th>
             </tr>
           </thead>
           <tbody id="tabela-clientes">
-            <tr class="cliente">
-              <td class="reserva-cliente-1">Carolina</td>
-              <td class="reserva-produto-1">Tapetes Cozinha (3 peças) - Azul</td>
-              <td class="reserva-qtd-1">3</td>
-              <td class="reserva-unitario-1">50</td>
-              <td class="reserva-total-1"></td>
+            <tr class="clientes">
+              <td class="nome">Carolina</td>
+              <td class="servico">Tapetes Cozinha (3 peças) - Azul</td>
+              <td class="qtd">3</td>
+              <td class="unitario">50</td>
+              <td class="total"></td>
             </tr>
-            <tr>
-              <td class="reserva-cliente-2">Manoela</td>
-              <td class="reserva-produto-2">Jantar sob Estrelas</td>
-              <td class="reserva-qtd-2">2</td>
-              <td class="reserva-unitario-2">600</td>
-              <td class="reserva-total-2"></td>
+            <tr class="clientes">
+              <td class="nome">Manoela</td>
+              <td class="servico">Jantar sob Estrelas</td>
+              <td class="qtd">2</td>
+              <td class="unitario">600</td>
+              <td class="total"></td>
             </tr>
-            <tr>
-              <td class="reserva-cliente-3">Lívia</td>
-              <td class="reserva-produto-3">Workshop de Sustentabilidade</td>
-              <td class="reserva-qtd-3">2</td>
-              <td class="reserva-unitario-3">180</td>
-              <td class="reserva-total-3"></td>
+            <tr class="clientes">
+              <td class="nome">Lívia</td>
+              <td class="servico">Workshop de Sustentabilidade</td>
+              <td class="qtd">2</td>
+              <td class="unitario">180</td>
+              <td class="total"></td>
             </tr>
-            <tr>
-              <td class="reserva-cliente-4">Kaique</td>
-              <td class="reserva-produto-4">Degustação de Vinhos e Queijos Artesanais</td>
-              <td class="reserva-qtd-4">250</td>
-              <td class="reserva-unitario-4">2</td>
-              <td class="reserva-total-4"></td>
+            <tr class="clientes">
+              <td class="nome">Kaique</td>
+              <td class="servico">Degustação de Vinhos e Queijos Artesanais</td>
+              <td class="qtd">250</td>
+              <td class="unitario">2</td>
+              <td class="total"></td>
             </tr>
-            <tr>
-              <td class="reserva-cliente-5">Pedro Francisco</td>
-              <td class="reserva-produto-5">Noite de Cinema sob as Árvores</td>
-              <td class="reserva-qtd-5">1</td>
-              <td class="reserva-unitario-5">1200</td>
-              <td class="reserva-total-5"></td>
+            <tr class="clientes">
+              <td class="nome">Pedro Francisco</td>
+              <td class="servico">Noite de Cinema sob as Árvores</td>
+              <td class="qtd">1</td>
+              <td class="unitario">1200</td>
+              <td class="total"></td>
             </tr>
           </tbody>
         </table>
       </section>
+      <section class="new-service">
+        <form action="" method="get">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" />
+          <label for="Serviço">Serviço</label>
+          <select name="service" id="service">
+            <option value="0">Selecione</option>
+            <option value="1">Jantar sob Estrelas</option>
+            <option value="2">Workshop de Sustentabilidade</option>
+            <option value="3">Degustação de Vinhos e Queijos Artesanais</option>
+            <option value="4">Noite de Cinema sob as Árvores</option>
+            <option value="5">Spa na Natureza</option>
+          </select>
+          <button id="adicionar-servico"  >adicionar-servico</button>
+        </form>
+      </section>
     </main>
-
-
-
-
-
-
-
-
-
     <footer>
       <div class="contact_footer">
         <p class="title_footer">Venha nos Conhecer</p>
