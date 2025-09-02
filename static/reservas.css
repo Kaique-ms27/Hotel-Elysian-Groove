@@ -77,7 +77,79 @@
     background-color: #2a4f3d;
   }
 
+/* Formulário */
+form{
 
+	margin-top: 20px;
+
+    margin-bottom: 0;
+
+}
+
+
+form label, form legend{
+
+	display: block;
+
+	font-size: 20px;
+
+	margin: 0 0 10px;
+
+}
+
+
+.form_pedido{
+
+    margin-left: 5%;
+
+}
+
+.bloco{
+
+    display: flex;
+
+    gap: 5%;
+
+}
+
+.bloco_nome, .bloco_qtd, .bloco_pedido, .bloco_unitario{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.bt{
+
+    margin-top: 2%;
+
+    margin-bottom: 2%;
+    
+    background-color: #9a5833;
+
+    color: white;
+
+    border-radius: 5px;
+
+    padding: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+/* caixa */
+input, select{
+
+    padding: 6px;
+
+    border-radius: 5px;
+
+    border: none;
+
+}
 
 
 

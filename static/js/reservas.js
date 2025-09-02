@@ -54,3 +54,23 @@ for (let count = 0; count < clientes.length; count++) {
 
 
 }
+
+//Função de calculo do valor total
+function calcula_total(qtd, unit) {
+
+    var total = 0;
+
+    total = qtd * unit;
+
+    return formata_valor(total);
+}
+
+
+// Função de formatação para R$
+function formata_valor(valor) {
+
+    var valor_format = valor.toLocaleString("pt-BR", { style: 'currency', currency: 'BRL' });
+
+    return valor_format;
+
+}
