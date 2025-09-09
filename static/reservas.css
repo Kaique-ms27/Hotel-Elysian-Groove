@@ -151,11 +151,23 @@ input, select{
 
 }
 
+/* Efeito para linha sumir quando excluida */
+.fadeOut{
+  opacity: 0;
+  transition: 1s;
+}
 
+/* Campo de Busca */
+#filtrar-tabela {
+  width: 19.5%;
+  height: 35px;
+  margin-bottom: 10px;
+}
 
-
-
-
+/* Esconde a linha para a busca */
+.invisivel {
+  display: none;
+}
 
 
 
