@@ -1,0 +1,27 @@
+{
+    "reservas_web":[
+        {
+            "nome": "Carolina",
+            "servico": "Jantar sob Estrelas",
+            "qtde": 2,
+            "unitario": "600",
+            "total":0
+        },
+        
+        {
+            "nome": "Lívia",
+            "servico": "Workshop de Sustentabilidade",
+            "qtde": 2,
+            "unitario": "180",
+            "total":0
+        },
+
+        {
+            "nome": "Kaique",
+            "servico": "Degustação de Vinhos e Queijos Artesanais",
+            "qtde": 2,
+            "unitario": "250",
+            "total":0
+        }
+    ]
+}
