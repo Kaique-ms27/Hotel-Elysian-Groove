@@ -10,7 +10,8 @@ botaoAPI.addEventListener("click", function(){
         // Passa por cada item do JSON e adiciona na tabela
         resposta.forEach(function(encomendaAPI) {
             adicionaEncomenda(encomendaAPI)
-        })
+        });
 
-    })
+    });
+    api.send();
 })

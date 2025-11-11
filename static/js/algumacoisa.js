@@ -1,18 +1,3 @@
-// function realizarReserva() {
-//     let nomeReserva = document.querySelector('#nome-nova-reserva').value;
-//     let qtdReserva = document.querySelector('#qtd-nova-reserva').value;
-//     let servicoReserva = document.querySelector('#servico-nova-reserva').value;
-//     let valorReserva = document.querySelector('#valor-nova-reserva').value;
-//     let btn = document.querySelector('#adicinar');
-
-//     document.createElement("tr");
-//     console.log("tr criado");
-    
-
-    
-
-// }
-    
 let botaoAdicionar = document.querySelector("#adicionar")
 botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
