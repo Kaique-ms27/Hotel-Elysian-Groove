@@ -11,12 +11,6 @@ botaoAdicionar.addEventListener("click", function(event) {
     //Adiciona a encomenda
     adicionaEncomenda(novaEncomenda)
 
-    // //Captura a tabela de encomendas
-    // let tabela = document.querySelector("#tabela-clientes");
-
-    // //Insere a nova reserva na tabela
-    // tabela.appendChild(montaTR(novaEncomenda));
-
     form.reset();
 })
 

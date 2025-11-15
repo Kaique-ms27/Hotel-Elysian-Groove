@@ -1,137 +1,168 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Elysian Grove – Beatus Ille</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/css/reservas.css" />
+    <link rel="shortcut icon" type="imagex/png" href="images/logo-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hotel Elysian Grove – Beatus Ille</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./static/css/reservas.css" />
-  <link rel="shortcut icon" type="imagex/png" href="images/logo-image.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet" />
-
-</head>
-
-<body>
-  <header>
-    <div class="divHeader">
-      <a href="index.html"><img src="images/logo-image.png" alt="Hotel Elysian Grove – Beatus Ille"
-          title="Hotel Elysian Grove" class="logo" /></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="contatos.html">Contato</a></li>
-          <li><a href="reservas.html">Reservas</a></li>
+  <body>
+    <header>
+      <div class="divHeader">
+        <a href="index.html"
+          ><img
+            src="images/logo-image.png"
+            alt="Hotel Elysian Grove – Beatus Ille"
+            title="Hotel Elysian Grove"
+            class="logo"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <p class="title_default">Reservas</p>
+      <section class="conteiner">
+        <!-- Campo de filtragem da tabela -->
+        <label for="filtrar-tabela">Buscar:</label>
+        <input
+          type="text"
+          id="filtrar-tabela"
+          class="fltrar-tabela"
+          placeholder="Digite o cliente que deseja buscar"
+        />
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Serviços</th>
+              <th>Quantidade</th>
+              <th>Valor Unitário</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-clientes">
+            <tr class="clientes">
+              <td class="nome">Manoela</td>
+              <td class="servico">Jantar sob Estrelas</td>
+              <td class="qtde">2</td>
+              <td class="unitario">600</td>
+              <td class="total"></td>
+            </tr>
+            <tr class="clientes">
+              <td class="nome">Lívia</td>
+              <td class="servico">Workshop de Sustentabilidade</td>
+              <td class="qtde">2</td>
+              <td class="unitario">180</td>
+              <td class="total"></td>
+            </tr>
+            <tr class="clientes">
+              <td class="nome">Kaique</td>
+              <td class="servico">Degustação de Vinhos e Queijos Artesanais</td>
+              <td class="qtde">2</td>
+              <td class="unitario">250</td>
+              <td class="total"></td>
+            </tr>
+            <tr class="clientes">
+              <td class="nome">Pedro Francisco</td>
+              <td class="servico">Noite de Cinema sob as Árvores</td>
+              <td class="qtde">1</td>
+              <td class="unitario">1200</td>
+              <td class="total"></td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="api-encomenda" class="bt">Buscar Encomendas</button>
+      </section>
+      <section class="form-pedido">
+        <form id="formulario-de-reserva">
+          <div class="bloco">
+            <div class="bloco_nome">
+              <label>Nome: </label>
+              <input
+                type="text"
+                id="nome"
+                required
+                placeholder="Digite seu nome"
+              />
+            </div>
+            <div class="bloco_qtd">
+              <label>Quantidade de encomendas: </label>
+              <input
+                type="number"
+                id="qtde"
+                required
+                placeholder="Selecione a quantidade"
+              />
+            </div>
+            <div class="bloco_produto">
+              <label>Produto:</label>
+              <select id="servico">
+                <option>Selecione</option>
+                <option>Clássico Chico Smash Burger</option>
+                <option>Chico's Bacon Churrasco</option>
+                <option>Chico's Salada Master</option>
+                <option>Chico's Australiano</option>
+                <option>Chico's Frango Brabo</option>
+                <option>Chico's Master Fish</option>
+                <option>Chico's Cebola Cabulosa</option>
+                <option>Chico's Batata Bolada</option>
+                <option>Chico's Dadinhos Maldosos</option>
+              </select>
+            </div>
+            <div class="bloco_unitario">
+              <label>Valor Unitário</label>
+              <input
+                type="text"
+                name=""
+                id="unitario"
+                required
+                placeholder="Digite o Valor"
+              />
+            </div>
+          </div>
+          <button type="button" class="bt" id="adicionar">Adicionar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="contact_footer">
+        <p class="title_footer">Venha nos Conhecer</p>
+        <ul class="contatos">
+          <li>
+            <a href="https://wa.me/5511937760281"
+              ><i class="fa fa-whatsapp"></i> Whatsapp(11) 93776-0281</a
+            >
+          </li>
+          <li>
+            <a href="https://instagram.com/kaique.ms27"
+              ><i class="fa fa-instagram"></i> Instagram @kaique.ms27</a
+            >
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <p class="title_default">Reservas</p>
-    <section class="conteiner">
-      <!-- Campo de filtragem da tabela -->
-      <label for="filtrar-tabela">Buscar:</label>
-      <input type="text" id="filtrar-tabela" class="fltrar-tabela" placeholder="Digite o cliente que deseja buscar">
-      <table>
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Serviços</th>
-            <th>Quantidade</th>
-            <th>Valor Unitário</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody id="tabela-clientes">
-          <tr class="clientes">
-            <td class="nome">Manoela</td>
-            <td class="servico">Jantar sob Estrelas</td>
-            <td class="qtde">2</td>
-            <td class="unitario">600</td>
-            <td class="total"></td>
-          </tr>
-          <tr class="clientes">
-            <td class="nome">Lívia</td>
-            <td class="servico">Workshop de Sustentabilidade</td>
-            <td class="qtde">2</td>
-            <td class="unitario">180</td>
-            <td class="total"></td>
-          </tr>
-          <tr class="clientes">
-            <td class="nome">Kaique</td>
-            <td class="servico">Degustação de Vinhos e Queijos Artesanais</td>
-            <td class="qtde">2</td>
-            <td class="unitario">250</td>
-            <td class="total"></td>
-          </tr>
-          <tr class="clientes">
-            <td class="nome">Pedro Francisco</td>
-            <td class="servico">Noite de Cinema sob as Árvores</td>
-            <td class="qtde">1</td>
-            <td class="unitario">1200</td>
-            <td class="total"></td>
-          </tr>
-        </tbody>
-      </table>
-      <button id="api-encomenda" class="bt">Buscar Encomendas</button>
-    </section>
-    <section class="form-pedido">
-      <form id="formulario-de-reserva">
-        <div class="bloco">
-          <div class="bloco_nome">
-            <label>Nome: </label>
-            <input type="text" id="nome" required placeholder="Digite seu nome">
-          </div>
-          <div class="bloco_qtd">
-            <label>Quantidade de encomendas: </label>
-            <input type="number" id="qtde" required placeholder="Selecione a quantidade">
-          </div>
-          <div class="bloco_produto">
-            <label>Produto:</label>
-            <select id="servico">
-              <option>Selecione</option>
-              <option>Clássico Chico Smash Burger</option>
-              <option>Chico's Bacon Churrasco</option>
-              <option>Chico's Salada Master</option>
-              <option>Chico's Australiano</option>
-              <option>Chico's Frango Brabo</option>
-              <option>Chico's Master Fish</option>
-              <option>Chico's Cebola Cabulosa</option>
-              <option>Chico's Batata Bolada</option>
-              <option>Chico's Dadinhos Maldosos</option>
-            </select>
-          </div>
-          <div class="bloco_unitario">
-            <label>Valor Unitário</label>
-            <input type="text" name="" id="unitario" required placeholder="Digite o Valor">
-          </div>
-        </div>
-        <button type="button" class="bt" id="adicionar">Adicionar</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <div class="contact_footer">
-      <p class="title_footer">Venha nos Conhecer</p>
-      <ul class="contatos">
-        <li>
-          <a href="https://wa.me/5511937760281"><i class="fa fa-whatsapp"></i> Whatsapp(11) 93776-0281</a>
-        </li>
-        <li>
-          <a href="https://instagram.com/kaique.ms27"><i class="fa fa-instagram"></i> Instagram @kaique.ms27</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script src="./static/js/reservas.js"></script>
-  <script src="./static/js/algumacoisa.js"></script>
-  <script src="./static/js/remover_encomenda.js"></script>
-  <script src="./static/js/buscar_encomenda.js"></script>
-  <script src="./static/js/api_encomenda.js"></script>
-</body>
-
+      </div>
+    </footer>
+    <script src="./static/js/reservas.js"></script>
+    <script src="./static/js/algumacoisa.js"></script>
+    <script src="./static/js/remover_encomenda.js"></script>
+    <script src="./static/js/buscar_encomenda.js"></script>
+    <script src="./static/js/api_encomenda.js"></script>
+  </body>
 </html>
